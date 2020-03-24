@@ -1,0 +1,105 @@
+header
+{
+    background-image:url(cafebg.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+body
+{
+	background-color: #ffffcc;
+}
+
+footer
+{
+	background-color: #ccffff;
+}
+
+iframe 
+{
+    float: left;
+    border: 1px solid #006600;
+}
+
+.login_button {
+  width: 10%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color: #4CAF50;
+  color: white;
+}
+#contact_text
+{
+	margin-left: 30px;
+	margin-top: 80px;
+	font-family: bebas-neue;
+	font-size: 60px;
+	letter-spacing: 10px;
+	text-align: center;
+}
+input[type=submit]
+{
+    background-color: #006600;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.tab 
+{
+	text-align:center;
+	border: 1px solid #006600;
+	background-color: white;
+}
+
+.tab button 
+{
+	color: #009999;
+	background-color: white;
+	font-family: Tahoma;
+	float: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 24px 16px;
+	transition: 0.3s;
+	font-size: 24px;
+}
+
+.tab button:hover 
+{
+  background-color: #cccccc;
+}
+
+.tab button.active 
+{
+  background-color: #e6e6e6;
+}
+
+.tabcontent 
+{
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+label {
+    display: block;
+    font: .9rem 'Fira Sans', sans-serif;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+}

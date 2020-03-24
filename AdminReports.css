@@ -1,0 +1,272 @@
+header{
+background-image:url(cafebg.jpg);
+  background-size: 100%;
+}
+body{
+	background-color: white;
+}
+footer{
+	background-color: #ff704d;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.update_button{
+	color: #ffffcc;
+	background-color: #2cdb60;
+	font-family: Tahoma;
+	float: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 24px 16px;
+	transition: 0.3s;
+	font-size: 24px;
+	border-radius: 9px;
+}
+.delete_button{
+	color: #ffffcc;
+	background-color: #ff704d;
+	font-family: Tahoma;
+	float: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 24px 16px;
+	transition: 0.3s;
+	font-size: 24px;
+	border-radius: 9px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #e6e6e6;}
+
+.tab {
+	text-align:center;
+	border: 1px solid #006600;
+	background-color: #80dfff;
+	
+}
+
+.tab button {
+	color: white;
+	background-color: #80dfff;
+	font-family: Tahoma;
+	float: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 24px 16px;
+	transition: 0.3s;
+	font-size: 24px;
+}
+
+.tab button:hover {
+  background-color: #00ace6 ;
+}
+
+.tab button.active {
+  background-color: #e6e6e6;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #FF5733;
+}
+.titolo{
+	font-family:impact; 
+	font-size:50px; 
+	color:#F3F781; 
+	background-color: #53c653; 
+	padding: 15px; 
+	border-radius: 20px; 
+	text-align:center;
+}
+.imgOut{
+	border-radius: 5%; 
+	border: 3px solid #ddd; 
+	padding: 2px; 
+	margin-left: 15%;
+}
+.subMenu{
+	font-family: Tahoma;
+	color: #008080;
+	text-align: left;
+}
+.imgMenuGall{
+	width: 250px;
+	height: 100px;
+	border-radius: 5%; 
+	border: 3px solid #00b3b3; 
+	padding: 2px; 
+	-webkit-transition: 1s;
+    transition: 1s;
+}
+.imgMenuGall:hover{
+	width: 600px;
+	height: 423px;
+}
+.imgGallTr{
+	width: 200px;
+	height: 400px;	
+	-webkit-transition: 1s;
+    transition: 1s;
+	border-radius: 5%; 
+	border: 3px solid #00b3b3; 
+	padding: 2px; 	
+}
+.imgGallTr:hover{
+	width:400px;
+	height:400px;
+}
+.imgGallVid{
+	width:610px;
+	height:610px;
+	border-radius: 7px;
+}
+.tableGallery{
+	background-color: lightyellow;
+	padding: 15px;
+	border-radius: 20px;
+	line-height: 1.5;
+}
+.imgGall{
+	width: 300px;
+	height: 300px;
+	border-radius: 7px;
+}
+.contt {
+font-size: 25px;  
+text-align: justify;
+font-family: sans-serif; 
+color: #009999;
+background-color: #f2f2f2;
+padding: 15px;
+border-radius: 20px;
+}
+.contr {margin-left:200px; 
+margin-right:200px; 
+font-size: 25px;  
+text-align:left;
+color: #404040;
+background-color: #ffff80;
+padding: 15px;
+border-radius: 20px;
+}
+
+.menuType{
+width: 100%;
+background-color:#ffcc66;
+font-family: Tahoma;
+text-align: center;
+padding-top: 1px;
+padding-bottom: 1px;
+color: black;
+}
+
+.menuFont{
+font-family: Tahoma;
+color: #654321;
+}
+.menuYourChoice{
+font-family: Tahoma; 
+text-align: center; 
+background-color: #ffcc66;
+padding: 15px;
+border-radius: 20px;
+border: 3px solid #ddd; 
+}
+.menuIMGdesign{
+background-color: #ff704d;
+padding: 5px;
+border-radius: 20px;
+border: 3px solid #ddd; 
+}
+iframe 
+{
+    float: left;
+    border: 1px solid #006600;
+}
+
+.directions 
+{
+    font-weight: bold;
+}
+#contact_text
+{
+	margin-left: 30px;
+	margin-top: 80px;
+	font-family: bebas-neue;
+	font-size: 60px;
+	letter-spacing: 10px;
+	text-align: center;
+}
+
+#divide 
+{
+    margin: 10px auto;
+    width: 90%;
+    height: 600px;
+    position:relative;
+    text-align:center
+}
+
+#hours 
+{
+    font-size:75%;
+}
+
+.vertical:after 
+{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px solid #ff0000;
+    transform: translate(-50%);
+}
+
+.insideverticalleft
+{
+    font-family: montserrat;
+    text-align: left;
+}
+
+.insideverticalright
+{
+    font-family: montserrat;
+    text-align: left;
+    margin-left: 575px;
+}
