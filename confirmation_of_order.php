@@ -75,11 +75,11 @@ session_start();
 		 
 <script language="javascript">
             function check_confirm(form) { 
-                    window.open('LoginCustomer.php',"_self")
+                    window.open('login_customer.php',"_self")
 					alert("Successfully Reserved! Purchase your product in the store within three days!")
             }
 			function check_cancel(form) { 
-                    window.open('LoginCustomer.php',"_self")
+                    window.open('login_customer.php',"_self")
 					alert("Successfully Cancelled! Your order was not recorded")
             }
 

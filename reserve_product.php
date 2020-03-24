@@ -101,6 +101,15 @@
 			$stmt = $connection->prepare($UPDATE_stock_reserve);
 			$stmt->execute();
 			$stmt->close();
+			//alert validation!
+			$message = "Successfully Reserved!";
+			echo "<script type='text/javascript'>alert('$message');</script>";
+			
+			//open next file
+			$myfile = fopen("confirmation_of_order.php", "r") or die("Unable to open file!");
+			echo fread($myfile,filesize("confirmation_of_order.php"));
+			fclose($myfile);
+			$connection->close();
 		}
 	}
 	
@@ -139,6 +148,16 @@
 			$stmt = $connection->prepare($UPDATE_stock_reserve);
 			$stmt->execute();
 			$stmt->close();
+			
+			//alert validation!
+			$message = "Successfully Reserved!";
+			echo "<script type='text/javascript'>alert('$message');</script>";
+			
+			//open next file
+			$myfile = fopen("confirmation_of_order.php", "r") or die("Unable to open file!");
+			echo fread($myfile,filesize("confirmation_of_order.php"));
+			fclose($myfile);
+			$connection->close();
 		}
 	}
 
@@ -188,20 +207,6 @@
 			fclose($myfile);
 			$connection->close();
 		}
-	}
-	/*
-	($storage_quantity - $quantity ('reserve_quantity') < 0) 
-	{
-		array_push($errors, "Unable to reserve that quantity")
-		}
-
-		else 
-		{
-		$UPDATE_sQuantity = "UPDATE storage SET storage_quantity = 'storage_quantity' - $quantity WHERE reservation_id = 'highest_id' ";
-		}*/
-	
-	
-	
-	
+	}	
 	
 ?>

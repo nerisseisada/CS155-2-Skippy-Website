@@ -13,7 +13,7 @@
 	$highest_id = $r['MAX(customer_id)'];	
 	
 	$result_all = mysqli_query($connection, "SELECT reservation.reservation_id, customer.name, customer.contact_number, reservation.product_code,
-reservation.size, reservation.quantity, reservation.total_price, reservation.status	FROM reservation JOIN customer ON reservation.customer_id = customer.customer_id WHERE customer.customer_id = $highest_id ");
+reservation.size, reservation.quantity, reservation.total_price, reservation.status	FROM reservation JOIN customer ON reservation.customer_id = customer.customer_id");
 
 	echo "<table border='1' align='center' style='font-size:24px' >
 	<tr>
