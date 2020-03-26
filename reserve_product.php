@@ -34,7 +34,7 @@
 	VALUES ($reservation_id, 0, 0, 'Undefined', $highest_id, 'B9003')";
 	$UPDATE_id = "UPDATE  reservation SET customer_id = '$highest_id'  WHERE reservation_id = '$highest_id' ";
 	$UPDATE_code = "UPDATE  reservation SET product_code = '$product_code'  WHERE reservation_id = '$highest_id' ";
-	$UPDATE_status = "UPDATE  reservation SET status = 'Ordered'  WHERE reservation_id = '$highest_id' ";
+	$UPDATE_status = "UPDATE  reservation SET status = 'Reserved'  WHERE reservation_id = '$highest_id' ";
 	$UPDATE_price = "UPDATE  reservation SET total_price = '$product_price'  WHERE reservation_id = '$highest_id' ";
 	$UPDATE_size = "UPDATE  reservation SET size = '$shirt_size'  WHERE reservation_id = '$highest_id' ";
 	$UPDATE_quantity = "UPDATE  reservation SET quantity = '$quantity'  WHERE reservation_id = '$highest_id' ";

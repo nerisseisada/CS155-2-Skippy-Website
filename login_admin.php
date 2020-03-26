@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Skippy - Login</title>
+    <title>Skippy - Login as Admin</title>
 	<link href="skippylogo.png" rel="icon" type="image">
 	<link rel="stylesheet" type="text/css" href="Login - CSS.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,49 +14,70 @@
 	<script src="http://use.edgefonts.net/bebas-neue:n4:default;montserrat:n4:default.js" type="text/javascript"></script>
 </head>
 
-<header>
-</header>
+<style>
+	.login_button {
+	  width: 10%;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  margin-top: 6px;
+	  margin-bottom: 16px;
+	  background-color: #4CAF50;
+	  color: white;
+	}
+</style>
 <br> 
 <br>
 	<center><img src="skippylogo.png" width="12%" style="border-radius: 50%; border: 4px solid #ddd; padding: 2px;" ></center>
 <br>
-<body>	
+<body>
 	<div class="tab">
-	<button class="active" onclick="window.location.href = 'login_customer.php';">Register as Customer</button>
-	<button onclick="window.location.href = 'login_admin.php';">Login as Admin</button>
+	<button onclick="window.location.href = 'login_customer.php';">Register as Customer</button>
+	<button class="active" onclick="window.location.href = 'login_admin.php';">Login as Admin</button>
 	<button onclick="window.location.href = 'lookup_order.php';">Look Up Order</button>
 </div>
 <br><br>
-<form action="new_transaction.php" method="post" class="form-horizontal">
+
+<form method="post" class="form-horizontal" name="form">
 	<section style="margin-left: 20%; margin-right: 20%;">
         <fieldset class="border p-2">
             <h4>
                 <div class="title-part">
-                    Register Information
+                    Administrator Login
                 </div>
             </h4>
 
-            <div class="form-group">
-                Name: <input type="text" name="customer_name" class="form-control" placeholder="Juan Dela Cruz" size="25" maxlength="30" required>
-            </div>
+            <div>
+				<label for="username">Username:</label>
+				<input type="text" class="form-control" id="username" name="username">
+			</div>
 
-            <div class="form-group">
-                Contact Number: <input type="tel" name="contact_number" class="form-control" placeholder="09XXXXXXXXX" size="25" minlength="11" maxlength="11" required>
-            </div>
+			<div>
+				<label for="pass">Password:</label>
+				<input type="password" class="form-control" id="pass" name="pass" minlength="8" required>
+			</div>
+
 		</fieldset>
 	</section>
-	<div class="form-group">
-		<input type="submit" onclick="check(this.form)"></input>
-	</div>
-</form>		
-	<script language="javascript">
-            function check(form) { 
-                    window.open('branding.php',"_self")
-                    alert("Successfully Registered!")
-                
-            }
-	</script>	
+	<center>
+		<input type="button" class="login_button" onclick="check(this.form)" value="Login">
+	</center>
 	
+</form>	
+
+<script language="javascript">
+            function check(form) { 
+				/*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.username.value == "admin" && form.pass.value == "skippy123") {
+                    window.open('admin_report.php',"_self") /*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        </script>	
 <br>
 <br>	
 <br>
@@ -69,7 +90,7 @@
 	<a href="https://www.facebook.com/"><img src="fblogo.png" alt="fb logo" width="50" height="50" hspace="5"></a>
 <br /><br />
 <small> 
-<p style="font-family: Tahoma;">Adriano<br>Ambata<br>Isada<br>Jacinto<br>Moncayo<br>San Luis<br></p>
+<p style="font-family: Tahoma;">Adriano<br>Ambata<br>Isada<br>Jacinto<br>Moncayo<br>San Luis<br</p>
 &copy Copyright Information 2019 
 </small>
 </div>

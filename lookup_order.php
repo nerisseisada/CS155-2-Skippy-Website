@@ -31,23 +31,7 @@ session_start();
 		font-size: 24px;
 		border-radius: 9px;
 		margin-left: 45%;
-		width: 200px;
-	}
-	.cancel_button
-	{
-		color: #fcff96;
-		background-color: #d61111;
-		font-family: Tahoma;
-		float: center;
-		border: none;
-		outline: none;
-		cursor: pointer;
-		padding: 24px 16px;
-		transition: 0.3s;
-		font-size: 24px;
-		border-radius: 9px;
-		margin-left: 45%;
-		width: 200px;
+		width: 150px;
 	}
 </style>
 
@@ -56,27 +40,23 @@ session_start();
 <br /> 
 	<center><img src="skippylogo.png" width="12%" style="border-radius: 50%; border: 4px solid #ddd; padding: 2px;" ></center>
 <br>
-
+<div class="tab">
+		<button onclick="window.location.href = 'login_customer.php';">LOGIN</button>
+	</div>
 </header>
 <! –– =======================================BODY=========================================================== ––>
 <body>
-	<iframe src="display_confirmation.php" align="middle" onload="this.style.height=(this.contentDocument.body.scrollHeight+45) +'px';" scrolling="no" style="width:100%; border:none;" style="position: absolute; height:100%; border-style: none; "></iframe>
-<br>
-
-
-
-		
-		  <button type="submit" class="confirm_button" onclick="check_confirm(this.form)" name="button" value="confirm">Confirm</button> 
-		  <br><br>
-		  <form action="button_cancel_order.php" method="post">
-			<input type="submit" class="cancel_button" name="deleteAll"  onclick="check_cancel(this.form)" value="Cancel">
-			</form>
-		 <br><br><br>
-		 
+	<br>
+	<form action="lookup_with_order.php" method="post" >
+	<input type="submit" class="confirm_button" name="update" value="Look It Up" onclick="check_update(this.form)"><br>	
+	<center><input type="text" name="lookup_number" placeholder="Input ID" size="4" minlength="1" maxlength="15"></center>
+	</form>
+	<br>
+	
 <script language="javascript">
             function check_confirm(form) { 
                     window.open('login_customer.php',"_self")
-					alert("Successfully Reserved! Purchase your product in the store within three days!")
+					alert("Successfully Reserved! Wait for two days to claim the product and then the reservation will expire three days after")
             }
 			function check_cancel(form) { 
                     window.open('login_customer.php',"_self")
@@ -86,7 +66,7 @@ session_start();
 	</script>	
 
 <! –– ========================================FOOTER========================================================== ––>
-
+<br><br><br><br><br>
 	<footer style="font-size:20px;" align="center">
 		<div class="f_section">
 			<br />
