@@ -1,4 +1,4 @@
-<?php
+.<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -65,8 +65,9 @@ session_start();
 
 
 
-		
-		  <button type="submit" class="confirm_button" onclick="check_confirm(this.form)" name="button" value="confirm">Confirm</button> 
+		 <form action="send_sms.php" method="post">
+		  <button type="submit" class="confirm_button" onclick="check_confirm(this.form)" name="confirm" value="confirm">Confirm</button> 
+		  </form>
 		  <br><br>
 		  <form action="button_cancel_order.php" method="post">
 			<input type="submit" class="cancel_button" name="deleteAll"  onclick="check_cancel(this.form)" value="Cancel">
