@@ -21,14 +21,16 @@
 <header>
 <br>
 	<div class="tab">
-		<button onclick="window.location.href = 'login_customer.php';">LOGIN</button>
+		<button onclick="window.location.href = 'login_customer.php';">Back to LOGIN</button>
+		<button class="active" onclick="window.location.href = 'login_customer.php';">Reserved Orders</button>
+		<button onclick="window.location.href = 'admin_storage.php';">Storage Monitoring</button>
 	</div>
 	<h2 id="contact_text">RESERVED ORDERS</h2>
 	<br>
 </header>
 <body>
 
-	<iframe src="display_database.php" align="middle" onload="this.style.height=(this.contentDocument.body.scrollHeight+45) +'px';" scrolling="no" style="width:100%; border:none;" style="position: absolute; height:100%; border-style: none; "></iframe>
+	<iframe src="display_table_reservation.php" align="middle" onload="this.style.height=(this.contentDocument.body.scrollHeight+45) +'px';" scrolling="no" style="width:100%; border:none;" style="position: absolute; height:100%; border-style: none; "></iframe>
 
 <br>
 <center>
