@@ -30,7 +30,7 @@
 		<button onclick="window.location.href = 'admin_report.php';">Reserved Orders</button>
 		<button class="active" onclick="window.location.href = 'admin_storage.php';">Storage Monitoring</button>
 	</div>
-	<h2 id="contact_text">RESERVED ORDERS</h2>
+	<h2 id="contact_text">STORAGE MONITORING</h2>
 	<br>
 </header>
 <body>
