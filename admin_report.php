@@ -61,10 +61,10 @@
 
 <script language="javascript">
             function check_update(form) { 
-                    window.open('AdminReport.php',"_self")
+                    window.open('admin_report.php',"_self")
             }
 			function check_delete(form) {
-                    window.open('AdminReport.php',"_self")
+                    window.open('admin_report.php',"_self")
                     alert("Successfully Deleted!")
             }
 	</script>	
