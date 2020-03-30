@@ -22,7 +22,7 @@
 <br>
 	<div class="tab">
 		<button onclick="window.location.href = 'login_customer.php';">Back to LOGIN</button>
-		<button class="active" onclick="window.location.href = 'login_customer.php';">Reserved Orders</button>
+		<button class="active" onclick="window.location.href = 'admin_report.php';">Reserved Orders</button>
 		<button onclick="window.location.href = 'admin_storage.php';">Storage Monitoring</button>
 	</div>
 	<h2 id="contact_text">RESERVED ORDERS</h2>
